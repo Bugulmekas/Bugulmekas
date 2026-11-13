@@ -1,90 +1,85 @@
-# Профиль Bugulmek (github.com/Bugulmekas) — как опубликовать
+# Bugulmekas · неоновый профиль
 
-Готовый Profile README в неоновом стиле: тёмный фон `#0D1117`, акценты
-голубой `#00F5FF`, фиолетовый `#7A00FF`, розовый `#FF00E4`.
+Profile README без внешних карточных сервисов: все панели — свои SVG-файлы
+в `assets/`, они генерируются скриптом из GitHub API и обновляются Actions.
 
-## 1. Что внутри
+## 1. Структура
 
 ```
 Bugulmekas/
-├─ README.md                      # сам профиль
-├─ SETUP.md                       # эта инструкция
-└─ .github/workflows/snake.yml    # генератор «змейки» из вкладов
+├─ README.md                     # профиль (ссылается на assets/*.svg)
+├─ assets/
+│  ├─ header.svg                 # шапка: HUD-рамка, неон, бегущая строка
+│  ├─ divider.svg                # разделитель
+│  ├─ stack.svg                  # пилюли со стеком
+│  ├─ stats.svg                  # репозитории / коммиты / звёзды / подписчики
+│  ├─ langs.svg                  # языки по объёму кода
+│  ├─ activity.svg               # heatmap активности за год
+│  ├─ project-*.svg              # карточки проектов
+│  └─ footer.svg                 # подвал
+├─ .github/
+│  ├─ scripts/cards.py           # генератор всех SVG
+│  └─ workflows/
+│     ├─ cards.yml               # обновляет assets раз в сутки
+│     └─ snake.yml               # змейка из вкладов
+└─ SETUP.md
 ```
 
-## 2. Публикация (имя репозитория = имя аккаунта)
+## 2. Палитра
 
-GitHub показывает README на странице профиля только если репозиторий называется
-точно так же, как логин аккаунта — то есть `Bugulmekas`, и README лежит в корне.
-
-### Вариант А — через сайт (проще)
-
-1. Создайте **публичный** репозиторий `Bugulmekas` без README и лицензии.
-2. Add file → Upload files → перетащите `README.md` и папку `.github`
-   (путь `.github/workflows/snake.yml` должен сохраниться).
-3. Commit changes — профиль https://github.com/Bugulmekas обновится через минуту.
-
-### Вариант Б — через git
-
-```bash
-cd F:\Bugulmekas
-git init -b main
-git add .
-git commit -m "chore: neon profile readme"
-git remote add origin https://github.com/Bugulmekas/Bugulmekas.git
-git push -u origin main
-```
-
-## 3. Змейка
-
-1. После пуша: **Actions → snake → Run workflow**.
-2. Через минуту появится ветка `output` с SVG-файлами.
-3. В README картинка уже подключена, отображаться начнёт автоматически.
-4. Дальше обновляется сама каждый день в 03:00 UTC.
-
-Пока workflow не запущен, на месте змейки будет пусто/битая картинка — это нормально.
-
-## 4. Чек-лист после публикации
-
-- [ ] Репозиторий называется `Bugulmekas` и он публичный.
-- [ ] У репозиториев заполнены **Description** (репозиторий → ⚙️ → Description) —
-      их показывают карточки в блоке «Проекты».
-- [ ] В блоке «Проекты» указаны `zapret-gui`, `Lavka_helper`, `LoveApp`.
-      Если переименуете репозиторий — поправьте `repo=` в ссылке карточки.
-- [ ] Тема GitHub: **Settings → Appearance → Dark** (палитра рассчитана на тёмный фон).
-- [ ] По желанию: **Settings → Profile → Bio / Location / Website** — профиль выглядит
-      законченным, когда заполнены и они.
-
-## 5. Что легко поменять
-
-| Хочу | Где править |
+| Роль | Цвет |
 | --- | --- |
-| Цвета | `color=0:00F5FF,50:7A00FF,100:FF00E4` (голубой → фиолетовый → розовый) |
-| Текст шапки | `text=Bugulmek`, `desc=...` у capsule-render |
-| Бегущая строка | `lines=...` у readme-typing-svg (текст в URL-кодировке) |
-| Набор технологий | блок «Стек», шаблон `https://img.shields.io/badge/Имя-0D1117?style=for-the-badge&logo=...` |
-| Проекты | блок «Проекты», параметры `username=` и `repo=` |
-| Подпись | цитата в блоке «Контакты» |
+| фон | `#0D1117` (совпадает с тёмной темой GitHub) |
+| панель | `#0B1120` / `#0E1626` |
+| рамка | `#1C2B45` |
+| неон-голубой | `#00F5FF` |
+| неон-фиолетовый | `#7A5CFF` |
+| неон-розовый | `#FF2BD6` |
+| текст | `#E7F2FF` |
 
-## 6. Сервисы, которые рисуют карточки
+Шрифт — моноширинный стек `Cascadia Code → JetBrains Mono → Consolas`.
+Никаких внешних шрифтов: GitHub не подгружает их в `<img>`, поэтому стек
+состоит только из системных.
 
-- capsule-render — шапка и волны: https://github.com/kyechan99/capsule-render
-- readme-typing-svg — бегущая строка: https://github.com/DenverCoder1/readme-typing-svg
-- streak-stats — серия коммитов: https://github.com/DenverCoder1/github-readme-streak-stats
-- profile-summary-cards — статистика, сводка и языки: https://github.com/vn7n24fzkq/github-profile-summary-cards
-- Platane/snk — змейка: https://github.com/Platane/snk
+## 3. Как обновляются данные
 
-Блок «Проекты» сделан без внешних генераторов карточек — только `shields.io`
-(язык и звёзды) и обычные ссылки, поэтому он не зависит от лимитов Vercel.
+Workflow `cards` раз в сутки (04:00 UTC) запускает `cards.py`, тот пересобирает
+SVG и коммитит их в `assets/`. Вручную: **Actions → cards → Run workflow**.
 
-## 7. Если картинка не грузится
+Локально:
 
-Карточки статистики рисуют публичные сервисы на Vercel, у них общий лимит
-запросов. `github-readme-stats` мы специально не используем — он чаще всех
-уходит в `503 Maximum retries exceeded`.
+```powershell
+$env:GITHUB_TOKEN = (gh auth token)
+py -3 .github\scripts\cards.py
+```
 
-Если какая-то карточка всё же не отрисовалась — обновите страницу через минуту,
-обычно проходит само. Для полной стабильности можно развернуть свои копии
-[profile-summary-cards](https://github.com/vn7n24fzkq/github-profile-summary-cards#deploy-to-vercel)
-и [streak-stats](https://github.com/DenverCoder1/github-readme-streak-stats#deploy-your-own-instance)
-и заменить домены в ссылках.
+Без `GITHUB_TOKEN` скрипт соберёт всё, кроме коммитов и heatmap (GraphQL).
+
+## 4. Что менять
+
+| Хочу | Где |
+| --- | --- |
+| Проекты (название, описание, акцент) | `PROJECTS` в `cards.py` |
+| Плитки стека | `STACK` в `cards.py` |
+| Цвета | константы `CYAN / VIOLET / MAGENTA / BG / PANEL / BORDER` |
+| Подписи секций | `README.md`, заголовки `<samp>❯ 0X · ...</samp>` |
+| Контакты | нижний блок README (бейджи shields.io) |
+| Цитата | `<i>` в конце README |
+
+После правки `cards.py` закоммитьте — workflow пересоберёт картинки сам
+(в `cards.yml` указан триггер по изменению скрипта).
+
+## 5. Важно
+
+- Тема GitHub: **Settings → Appearance → Dark** — карточки рассчитаны на `#0D1117`.
+- GitHub кэширует картинки через camo, поэтому свежие цифры могут появиться
+  с задержкой до нескольких часов. Ссылки не ломаются.
+- Если карточка не обновилась после пуша — Actions → cards → Run workflow,
+  затем Ctrl+F5 на странице профиля.
+- Змейка живёт в ветке `output`, картинки уже прописаны в README.
+
+## 6. Полезное
+
+- [Platane/snk](https://github.com/Platane/snk) — змейка
+- [GitHub GraphQL API](https://docs.github.com/en/graphql) — календарь вкладов
+- [shields.io](https://shields.io) — бейджи в блоке контактов

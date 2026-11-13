@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="224" viewBox="0 0 1000 224">
+
+  <defs>
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00F5FF"/>
+      <stop offset="55%" stop-color="#7A5CFF"/>
+      <stop offset="100%" stop-color="#FF2BD6"/>
+    </linearGradient>
+    <linearGradient id="neonV" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FF2BD6" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#00F5FF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0E1626"/>
+      <stop offset="100%" stop-color="#0B1120"/>
+    </linearGradient>
+    <radialGradient id="haloC">
+      <stop offset="0%" stop-color="#00F5FF" stop-opacity="0.20"/>
+      <stop offset="60%" stop-color="#00F5FF" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#00F5FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="haloM">
+      <stop offset="0%" stop-color="#FF2BD6" stop-opacity="0.18"/>
+      <stop offset="60%" stop-color="#FF2BD6" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#FF2BD6" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#1C2B45" stroke-width="1" stroke-opacity="0.55"/>
+    </pattern>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    
+  </defs>
+  <rect width="1000" height="224" fill="#0D1117"/>
+  <rect x="0.5" y="12.5" width="999" height="200" rx="14" fill="url(#panel)" stroke="#1C2B45"/>
+  <text x="28" y="42" fill="#7C8DA6" font-size="11" letter-spacing="4">ЯЗЫКИ · ПО ОБЪЁМУ КОДА</text>
+  
+    <g font-family="'Cascadia Code','JetBrains Mono',Consolas,'Courier New',monospace">
+      <text x="28" y="62" fill="#E7F2FF" font-size="14" letter-spacing="1">POWERSHELL</text>
+      <rect x="196" y="49" width="700" height="12" rx="6" fill="#0E1626" stroke="#1C2B45"/>
+      <rect x="196" y="49" width="459" height="12" rx="6" fill="url(#neon)" filter="url(#soft)"/>
+      <text x="920" y="62" fill="#00F5FF" font-size="13" text-anchor="end">66%</text>
+    </g>
+    <g font-family="'Cascadia Code','JetBrains Mono',Consolas,'Courier New',monospace">
+      <text x="28" y="96" fill="#E7F2FF" font-size="14" letter-spacing="1">C++</text>
+      <rect x="196" y="83" width="700" height="12" rx="6" fill="#0E1626" stroke="#1C2B45"/>
+      <rect x="196" y="83" width="84" height="12" rx="6" fill="url(#neon)" filter="url(#soft)"/>
+      <text x="920" y="96" fill="#00F5FF" font-size="13" text-anchor="end">12%</text>
+    </g>
+    <g font-family="'Cascadia Code','JetBrains Mono',Consolas,'Courier New',monospace">
+      <text x="28" y="130" fill="#E7F2FF" font-size="14" letter-spacing="1">DART</text>
+      <rect x="196" y="117" width="700" height="12" rx="6" fill="#0E1626" stroke="#1C2B45"/>
+      <rect x="196" y="117" width="71" height="12" rx="6" fill="url(#neon)" filter="url(#soft)"/>
+      <text x="920" y="130" fill="#00F5FF" font-size="13" text-anchor="end">10%</text>
+    </g>
+    <g font-family="'Cascadia Code','JetBrains Mono',Consolas,'Courier New',monospace">
+      <text x="28" y="164" fill="#E7F2FF" font-size="14" letter-spacing="1">CMAKE</text>
+      <rect x="196" y="151" width="700" height="12" rx="6" fill="#0E1626" stroke="#1C2B45"/>
+      <rect x="196" y="151" width="66" height="12" rx="6" fill="url(#neon)" filter="url(#soft)"/>
+      <text x="920" y="164" fill="#00F5FF" font-size="13" text-anchor="end">9%</text>
+    </g>
+    <g font-family="'Cascadia Code','JetBrains Mono',Consolas,'Courier New',monospace">
+      <text x="28" y="198" fill="#E7F2FF" font-size="14" letter-spacing="1">SWIFT</text>
+      <rect x="196" y="185" width="700" height="12" rx="6" fill="#0E1626" stroke="#1C2B45"/>
+      <rect x="196" y="185" width="7" height="12" rx="6" fill="url(#neon)" filter="url(#soft)"/>
+      <text x="920" y="198" fill="#00F5FF" font-size="13" text-anchor="end">1%</text>
+    </g>
+</svg>

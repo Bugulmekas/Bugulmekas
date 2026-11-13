@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="300" viewBox="0 0 1000 300" role="img" aria-label="Bugulmek">
+
+  <defs>
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00F5FF"/>
+      <stop offset="55%" stop-color="#7A5CFF"/>
+      <stop offset="100%" stop-color="#FF2BD6"/>
+    </linearGradient>
+    <linearGradient id="neonV" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FF2BD6" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#00F5FF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0E1626"/>
+      <stop offset="100%" stop-color="#0B1120"/>
+    </linearGradient>
+    <radialGradient id="haloC">
+      <stop offset="0%" stop-color="#00F5FF" stop-opacity="0.20"/>
+      <stop offset="60%" stop-color="#00F5FF" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#00F5FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="haloM">
+      <stop offset="0%" stop-color="#FF2BD6" stop-opacity="0.18"/>
+      <stop offset="60%" stop-color="#FF2BD6" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#FF2BD6" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#1C2B45" stroke-width="1" stroke-opacity="0.55"/>
+    </pattern>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    
+  </defs>
+  <rect width="1000" height="300" fill="#0D1117"/>
+  <rect width="1000" height="300" fill="url(#grid)" opacity="0.35"/>
+  <ellipse cx="290" cy="150" rx="360" ry="170" fill="url(#haloC)"/>
+  <ellipse cx="740" cy="110" rx="320" ry="160" fill="url(#haloM)"/>
+
+  <rect x="12.5" y="12.5" width="975" height="275" rx="18" fill="none" stroke="#1C2B45"/>
+  <path d="M12 60V24a12 12 0 0 1 12-12h48" fill="none" stroke="#00F5FF" stroke-width="2.5" filter="url(#soft)"/>
+  <path d="M988 60V24a12 12 0 0 0-12-12h-48" fill="none" stroke="#FF2BD6" stroke-width="2.5" filter="url(#soft)"/>
+  <path d="M12 240v36a12 12 0 0 0 12 12h48" fill="none" stroke="#7A5CFF" stroke-width="2.5" opacity="0.8"/>
+  <path d="M988 240v36a12 12 0 0 1-12 12h-48" fill="none" stroke="#7A5CFF" stroke-width="2.5" opacity="0.8"/>
+
+  <g font-family="'Cascadia Code','JetBrains Mono',Consolas,'Courier New',monospace">
+    <text x="56" y="86" fill="#00F5FF" font-size="13" letter-spacing="5" opacity="0.9">// CYBER PROFILE v2.0</text>
+
+    <g filter="url(#glow)">
+      <text x="54" y="164" fill="#FF2BD6" opacity="0.5" font-size="72" font-weight="700" letter-spacing="4">BUGULMEK</text>
+      <text x="60" y="164" fill="#00F5FF" opacity="0.5" font-size="72" font-weight="700" letter-spacing="4">BUGULMEK</text>
+      <text x="57" y="164" fill="#E7F2FF" font-size="72" font-weight="700" letter-spacing="4">BUGULMEK</text>
+    </g>
+
+    <text x="58" y="199" fill="#7C8DA6" font-size="17" letter-spacing="2">powershell · c++ · java · gui для windows</text>
+
+    <g opacity="0.95">
+      <rect x="648" y="64" width="300" height="150" rx="12" fill="#0B1120" stroke="#1C2B45"/>
+      <circle cx="668" cy="84" r="4" fill="#FF2BD6"/>
+      <circle cx="682" cy="84" r="4" fill="#7A5CFF"/>
+      <circle cx="696" cy="84" r="4" fill="#00F5FF"/>
+      <line x1="648" y1="98" x2="948" y2="98" stroke="#1C2B45"/>
+      <text x="668" y="122" fill="#00F5FF" font-size="13">$ whoami</text>
+      <text x="668" y="144" fill="#E7F2FF" font-size="13">Bugulmek</text>
+      <text x="668" y="168" fill="#00F5FF" font-size="13">$ status</text>
+      <circle cx="674" cy="186" r="4" fill="#00F5FF" filter="url(#soft)">
+        <animate attributeName="opacity" values="1;0.25;1" dur="2.2s" repeatCount="indefinite"/>
+      </circle>
+      <text x="688" y="191" fill="#E7F2FF" font-size="13">online · 4 repos</text>
+    </g>
+
+    <g clip-path="url(#tick)">
+      <text x="0" y="271" fill="#7C8DA6" font-size="12" letter-spacing="3" opacity="0.85">
+        ✦ НЕОН ВКЛЮЧЁН ✦ POWERSHELL ✦ C++ ✦ JAVA ✦ GUI ДЛЯ ZAPRET ✦ НЕОН ВКЛЮЧЁН ✦ POWERSHELL ✦ C++ ✦ JAVA ✦ GUI ДЛЯ ZAPRET
+        <animate attributeName="x" from="1000" to="-980" dur="26s" repeatCount="indefinite"/>
+      </text>
+    </g>
+  </g>
+  <clipPath id="tick"><rect x="16" y="252" width="968" height="24"/></clipPath>
+</svg>
