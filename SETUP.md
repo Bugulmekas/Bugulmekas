@@ -70,17 +70,21 @@ git push -u origin main
 
 - capsule-render — шапка и волны: https://github.com/kyechan99/capsule-render
 - readme-typing-svg — бегущая строка: https://github.com/DenverCoder1/readme-typing-svg
-- github-readme-stats — статистика, языки, пины: https://github.com/anuraghazra/github-readme-stats
 - streak-stats — серия коммитов: https://github.com/DenverCoder1/github-readme-streak-stats
-- profile-summary-cards — сводка и языки: https://github.com/vn7n24fzkq/github-profile-summary-cards
+- profile-summary-cards — статистика, сводка и языки: https://github.com/vn7n24fzkq/github-profile-summary-cards
 - Platane/snk — змейка: https://github.com/Platane/snk
+
+Блок «Проекты» сделан без внешних генераторов карточек — только `shields.io`
+(язык и звёзды) и обычные ссылки, поэтому он не зависит от лимитов Vercel.
 
 ## 7. Если картинка не грузится
 
-Все карточки рисуют публичные сервисы на Vercel, у них общий лимит запросов.
-Иногда вместо карточки видно «Maximum retries exceeded» или пустое место —
-это временно, проходит само или после обновления страницы.
+Карточки статистики рисуют публичные сервисы на Vercel, у них общий лимит
+запросов. `github-readme-stats` мы специально не используем — он чаще всех
+уходит в `503 Maximum retries exceeded`.
 
-Для полной стабильности можно развернуть свою копию
-[github-readme-stats](https://github.com/anuraghazra/github-readme-stats#deploy-on-your-own-vercel-instance)
-и заменить домен в ссылках. Для этого профиля не обязательно.
+Если какая-то карточка всё же не отрисовалась — обновите страницу через минуту,
+обычно проходит само. Для полной стабильности можно развернуть свои копии
+[profile-summary-cards](https://github.com/vn7n24fzkq/github-profile-summary-cards#deploy-to-vercel)
+и [streak-stats](https://github.com/DenverCoder1/github-readme-streak-stats#deploy-your-own-instance)
+и заменить домены в ссылках.
