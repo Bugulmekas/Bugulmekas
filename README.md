@@ -74,14 +74,10 @@
 ### <samp>❯ Статистика</samp>
 
 <a href="https://github.com/Bugulmekas">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=Bugulmekas&show_icons=true&hide_border=true&bg_color=0D1117&title_color=00F5FF&icon_color=FF00E4&text_color=C9D1D9&ring_color=7A00FF&include_all_commits=true&count_private=true" alt="stats" />
+  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Bugulmekas&theme=radical" alt="stats" />
 </a>
 <a href="https://github.com/Bugulmekas">
-  <img height="170" src="https://streak-stats.demolab.com?user=Bugulmekas&hide_border=true&background=0D1117&stroke=7A00FF&ring=00F5FF&fire=FF00E4&currStreakNum=FFFFFF&currStreakLabel=00F5FF&sideNums=FFFFFF&sideLabels=C9D1D9&dates=8B949E" alt="streak" />
-</a>
-
-<a href="https://github.com/Bugulmekas">
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Bugulmekas&layout=compact&hide_border=true&bg_color=0D1117&title_color=00F5FF&text_color=C9D1D9&langs_count=8" alt="langs" />
+  <img width="49%" src="https://streak-stats.demolab.com?user=Bugulmekas&hide_border=true&background=0D1117&stroke=7A00FF&ring=00F5FF&fire=FF00E4&currStreakNum=FFFFFF&currStreakLabel=00F5FF&sideNums=FFFFFF&sideLabels=C9D1D9&dates=8B949E" alt="streak" />
 </a>
 
 <br/><br/>
@@ -107,15 +103,44 @@
 
 ### <samp>❯ Проекты</samp>
 
-<a href="https://github.com/Bugulmekas/zapret-gui">
-  <img width="32%" src="https://github-readme-stats.vercel.app/api/pin/?username=Bugulmekas&repo=zapret-gui&hide_border=true&bg_color=0D1117&title_color=00F5FF&icon_color=FF00E4&text_color=8B949E&description_lines_count=2" alt="zapret-gui" />
-</a>
-<a href="https://github.com/Bugulmekas/Lavka_helper">
-  <img width="32%" src="https://github-readme-stats.vercel.app/api/pin/?username=Bugulmekas&repo=Lavka_helper&hide_border=true&bg_color=0D1117&title_color=00F5FF&icon_color=FF00E4&text_color=8B949E&description_lines_count=2" alt="Lavka_helper" />
-</a>
-<a href="https://github.com/Bugulmekas/LoveApp">
-  <img width="32%" src="https://github-readme-stats.vercel.app/api/pin/?username=Bugulmekas&repo=LoveApp&hide_border=true&bg_color=0D1117&title_color=00F5FF&icon_color=FF00E4&text_color=8B949E&description_lines_count=2" alt="LoveApp" />
-</a>
+<table align="center" border="0">
+<tr>
+
+<td width="33%" valign="top" align="left">
+
+**⚡ [zapret-gui](https://github.com/Bugulmekas/zapret-gui)**
+
+<img src="https://img.shields.io/badge/PowerShell-00F5FF?style=flat-square&logo=powershell&logoColor=0D1117" alt="PowerShell" />
+<img src="https://img.shields.io/github/stars/Bugulmekas/zapret-gui?style=flat-square&labelColor=0D1117&color=7A00FF&logo=github&logoColor=FFFFFF" alt="stars" />
+
+<sub>GUI-управлятор zapret: служба, стратегии, IPSet, тест стратегий и автообновление.</sub>
+
+</td>
+
+<td width="33%" valign="top" align="left">
+
+**📦 [Lavka_helper](https://github.com/Bugulmekas/Lavka_helper)**
+
+<img src="https://img.shields.io/badge/C%2B%2B-00F5FF?style=flat-square&logo=cplusplus&logoColor=0D1117" alt="C++" />
+<img src="https://img.shields.io/github/stars/Bugulmekas/Lavka_helper?style=flat-square&labelColor=0D1117&color=7A00FF&logo=github&logoColor=FFFFFF" alt="stars" />
+
+<sub>Lavka Helper — удобное приложение для курьеров Яндекс Лавки.</sub>
+
+</td>
+
+<td width="33%" valign="top" align="left">
+
+**💌 [LoveApp](https://github.com/Bugulmekas/LoveApp)**
+
+<img src="https://img.shields.io/badge/Java-00F5FF?style=flat-square&logo=openjdk&logoColor=0D1117" alt="Java" />
+<img src="https://img.shields.io/github/stars/Bugulmekas/LoveApp?style=flat-square&labelColor=0D1117&color=7A00FF&logo=github&logoColor=FFFFFF" alt="stars" />
+
+<sub>Поздравление с 8 марта или 14 февраля — маленькое приложение с большим смыслом.</sub>
+
+</td>
+
+</tr>
+</table>
 
 </div>
 
