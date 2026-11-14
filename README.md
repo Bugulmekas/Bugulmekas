@@ -17,7 +17,7 @@
   name     = Bugulmek
   role     = разработчик утилит для Windows
   focus    = GUI · автоматизация · обход блокировок
-  langs    = PowerShell, C++, Java
+  langs    = PowerShell, C++, Java, Kotlin
   contact  = lordsamper9@gmail.com
 ```
 
@@ -26,7 +26,8 @@
 
 - ⚡ Делаю **удобные GUI** там, где обычно живёт консоль
 - 🛡️ Развиваю **[zapret-gui](https://github.com/Bugulmekas/zapret-gui)** — служба, стратегии, IPSet
-- 🧪 Экспериментирую с **C++ / Java / PowerShell**
+- 📱 Перенёс обход DPI на Android: **[dpi-bypass](https://github.com/Bugulmekas/dpi-bypass)** — без root, VpnService
+- 🧪 Экспериментирую с **C++ / Java / Kotlin / PowerShell**
 - 🎯 Люблю, когда «просто работает» и выглядит аккуратно
 
 </td>
