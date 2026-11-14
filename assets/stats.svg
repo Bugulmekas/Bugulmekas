@@ -43,21 +43,21 @@
       <rect x="16" y="16" width="230" height="128" rx="12" fill="url(#panel)" stroke="#1C2B45"/>
       <path d="M32 16H94" stroke="#00F5FF" stroke-width="2.5" filter="url(#soft)"/>
       <text x="34" y="46" fill="#7C8DA6" font-size="11" letter-spacing="4">REPOS</text>
-      <text x="34" y="98" fill="#E7F2FF" font-size="46" font-weight="700" filter="url(#glow)">4</text>
+      <text x="34" y="98" fill="#E7F2FF" font-size="46" font-weight="700" filter="url(#glow)">5</text>
       <text x="34" y="124" fill="#00F5FF" font-size="11" letter-spacing="2" opacity="0.85">публичных</text>
     </g>
     <g>
       <rect x="263" y="16" width="230" height="128" rx="12" fill="url(#panel)" stroke="#1C2B45"/>
       <path d="M279 16H341" stroke="#FF2BD6" stroke-width="2.5" filter="url(#soft)"/>
       <text x="281" y="46" fill="#7C8DA6" font-size="11" letter-spacing="4">COMMITS</text>
-      <text x="281" y="98" fill="#E7F2FF" font-size="46" font-weight="700" filter="url(#glow)">24</text>
+      <text x="281" y="98" fill="#E7F2FF" font-size="46" font-weight="700" filter="url(#glow)">45</text>
       <text x="281" y="124" fill="#FF2BD6" font-size="11" letter-spacing="2" opacity="0.85">за год</text>
     </g>
     <g>
       <rect x="510" y="16" width="230" height="128" rx="12" fill="url(#panel)" stroke="#1C2B45"/>
       <path d="M526 16H588" stroke="#7A5CFF" stroke-width="2.5" filter="url(#soft)"/>
       <text x="528" y="46" fill="#7C8DA6" font-size="11" letter-spacing="4">STARS</text>
-      <text x="528" y="98" fill="#E7F2FF" font-size="46" font-weight="700" filter="url(#glow)">1</text>
+      <text x="528" y="98" fill="#E7F2FF" font-size="46" font-weight="700" filter="url(#glow)">2</text>
       <text x="528" y="124" fill="#7A5CFF" font-size="11" letter-spacing="2" opacity="0.85">набрано</text>
     </g>
     <g>

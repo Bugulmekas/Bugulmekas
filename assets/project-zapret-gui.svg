@@ -47,5 +47,5 @@
   <text x="26" y="132" fill="#7C8DA6" font-size="13">GUI-управлятор zapret: служба,</text><text x="26" y="151" fill="#7C8DA6" font-size="13">стратегии, IPSet, тест стратегий и</text><text x="26" y="170" fill="#7C8DA6" font-size="13">автообновление.</text>
   <rect x="26" y="186" width="110" height="26" rx="13" fill="#00F5FF" opacity="0.14"/>
   <text x="40" y="204" fill="#00F5FF" font-size="12">PowerShell</text>
-  <text x="294" y="204" fill="#7C8DA6" font-size="12" text-anchor="end">★ 0</text>
+  <text x="294" y="204" fill="#7C8DA6" font-size="12" text-anchor="end">★ 1</text>
 </svg>

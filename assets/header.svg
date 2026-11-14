@@ -71,7 +71,7 @@
       <circle cx="674" cy="186" r="4" fill="#00F5FF" filter="url(#soft)">
         <animate attributeName="opacity" values="1;0.25;1" dur="2.2s" repeatCount="indefinite"/>
       </circle>
-      <text x="688" y="191" fill="#E7F2FF" font-size="13">online · 4 repos</text>
+      <text x="688" y="191" fill="#E7F2FF" font-size="13">online · 5 repos</text>
     </g>
 
     <g clip-path="url(#tick)">

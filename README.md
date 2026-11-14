@@ -39,7 +39,7 @@
 
 ### <samp>❯ 02 · СТЕК</samp>
 
-<img src="assets/stack.svg" width="100%" alt="Стек: PowerShell, C++, Java, WinForms, Android, Windows, Git, GitHub, Photoshop" />
+<img src="assets/stack.svg" width="100%" alt="Стек: PowerShell, C++, Java, Kotlin, WinForms, Android, Windows, Git, GitHub, Photoshop" />
 
 <img src="assets/divider.svg" width="100%" alt="" />
 
@@ -70,11 +70,17 @@
 ### <samp>❯ 05 · ПРОЕКТЫ</samp>
 
 <a href="https://github.com/Bugulmekas/zapret-gui">
-  <img width="32%" src="assets/project-zapret-gui.svg" alt="zapret-gui" />
-</a><a href="https://github.com/Bugulmekas/Lavka_helper">
-  <img width="32%" src="assets/project-lavka-helper.svg" alt="Lavka_helper" />
-</a><a href="https://github.com/Bugulmekas/LoveApp">
-  <img width="32%" src="assets/project-loveapp.svg" alt="LoveApp" />
+  <img width="48%" src="assets/project-zapret-gui.svg" alt="zapret-gui" />
+</a> <a href="https://github.com/Bugulmekas/dpi-bypass">
+  <img width="48%" src="assets/project-dpi-bypass.svg" alt="dpi-bypass" />
+</a>
+
+<br/>
+
+<a href="https://github.com/Bugulmekas/Lavka_helper">
+  <img width="48%" src="assets/project-lavka-helper.svg" alt="Lavka_helper" />
+</a> <a href="https://github.com/Bugulmekas/LoveApp">
+  <img width="48%" src="assets/project-loveapp.svg" alt="LoveApp" />
 </a>
 
 <img src="assets/divider.svg" width="100%" alt="" />

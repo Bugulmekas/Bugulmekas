@@ -52,6 +52,13 @@ PROJECTS = [
         "title": "LoveApp",
         "desc": "Поздравление с 8 марта или 14 февраля — маленькое приложение с большим смыслом.",
     },
+    {
+        "repo": "dpi-bypass",
+        "index": "04",
+        "accent": CYAN,
+        "title": "dpi-bypass",
+        "desc": "Android-обход DPI без root: VpnService + локальный SOCKS5 ByeDPI, стратегии split и disorder.",
+    },
 ]
 
 LANG_LABEL = {
@@ -66,7 +73,7 @@ LANG_LABEL = {
     "CSS": "CSS",
 }
 
-STACK = ["PowerShell", "C++", "Java", "WinForms", "Android", "Windows", "Git", "GitHub", "Photoshop"]
+STACK = ["PowerShell", "C++", "Java", "Kotlin", "Android", "WinForms", "Windows", "Git", "GitHub", "Photoshop"]
 
 
 # ---------------------------------------------------------------- api
@@ -219,7 +226,7 @@ def header_svg(stats):
       <text x="57" y="164" fill="{TEXT}" font-size="72" font-weight="700" letter-spacing="4">BUGULMEK</text>
     </g>
 
-    <text x="58" y="199" fill="{MUTED}" font-size="17" letter-spacing="2">powershell · c++ · java · gui для windows</text>
+    <text x="58" y="199" fill="{MUTED}" font-size="17" letter-spacing="2">powershell · c++ · java · kotlin · android</text>
 
     <g opacity="0.95">
       <rect x="648" y="64" width="300" height="150" rx="12" fill="{PANEL}" stroke="{BORDER}"/>
@@ -262,22 +269,31 @@ def divider_svg():
 
 
 def stack_svg():
-    x = 28
+    per_row = 5
+    gap = 12
+    row_h = 48
+    top = 40
+    rows = [STACK[i:i + per_row] for i in range(0, len(STACK), per_row)]
     pills = []
-    for name in STACK:
-        w = 26 + len(name) * 10.6
-        pills.append(
-            f'<g><rect x="{x:.0f}" y="40" width="{w:.0f}" height="38" rx="19" '
-            f'fill="{PANEL}" stroke="{BORDER}"/>'
-            f'<rect x="{x:.0f}" y="40" width="26" height="38" rx="19" fill="{CYAN}" opacity="0.10"/>'
-            f'<text x="{x + 14:.0f}" y="65" fill="{CYAN}" font-size="13">▹</text>'
-            f'<text x="{x + 30:.0f}" y="65" fill="{TEXT}" font-size="14" letter-spacing="1">{esc(name)}</text></g>'
-        )
-        x += w + 12
-    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="118" viewBox="0 0 {W} 118">
+    for r, names in enumerate(rows):
+        widths = [26 + len(name) * 10.6 for name in names]
+        x = 28
+        y = top + r * row_h
+        for name, w in zip(names, widths):
+            pills.append(
+                f'<g><rect x="{x:.0f}" y="{y}" width="{w:.0f}" height="38" rx="19" '
+                f'fill="{PANEL}" stroke="{BORDER}"/>'
+                f'<rect x="{x:.0f}" y="{y}" width="26" height="38" rx="19" fill="{CYAN}" opacity="0.10"/>'
+                f'<text x="{x + 14:.0f}" y="{y + 25}" fill="{CYAN}" font-size="13">▹</text>'
+                f'<text x="{x + 30:.0f}" y="{y + 25}" fill="{TEXT}" font-size="14" letter-spacing="1">{esc(name)}</text></g>'
+            )
+            x += w + gap
+    panel_h = top + row_h * (len(rows) - 1) + 38 + 14
+    height = panel_h + 12
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{height}" viewBox="0 0 {W} {height}">
 {defs()}
-  <rect width="{W}" height="118" fill="{BG}"/>
-  <rect x="0.5" y="12.5" width="{W-1}" height="94" rx="14" fill="url(#panel)" stroke="{BORDER}"/>
+  <rect width="{W}" height="{height}" fill="{BG}"/>
+  <rect x="0.5" y="12.5" width="{W-1}" height="{panel_h - 12}" rx="14" fill="url(#panel)" stroke="{BORDER}"/>
   <text x="28" y="30" fill="{MUTED}" font-size="11" letter-spacing="4">СТЕК</text>
   {''.join(pills)}
 </svg>
