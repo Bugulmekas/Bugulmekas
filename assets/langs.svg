@@ -44,31 +44,31 @@
     <g font-family="'Cascadia Code','JetBrains Mono',Consolas,'Courier New',monospace">
       <text x="28" y="62" fill="#E7F2FF" font-size="14" letter-spacing="1">POWERSHELL</text>
       <rect x="196" y="49" width="700" height="12" rx="6" fill="#0E1626" stroke="#1C2B45"/>
-      <rect x="196" y="49" width="469" height="12" rx="6" fill="url(#neon)" filter="url(#soft)"/>
-      <text x="920" y="62" fill="#00F5FF" font-size="13" text-anchor="end">67%</text>
+      <rect x="196" y="49" width="552" height="12" rx="6" fill="url(#neon)" filter="url(#soft)"/>
+      <text x="920" y="62" fill="#00F5FF" font-size="13" text-anchor="end">79%</text>
     </g>
     <g font-family="'Cascadia Code','JetBrains Mono',Consolas,'Courier New',monospace">
       <text x="28" y="96" fill="#E7F2FF" font-size="14" letter-spacing="1">KOTLIN</text>
       <rect x="196" y="83" width="700" height="12" rx="6" fill="#0E1626" stroke="#1C2B45"/>
-      <rect x="196" y="83" width="61" height="12" rx="6" fill="url(#neon)" filter="url(#soft)"/>
-      <text x="920" y="96" fill="#00F5FF" font-size="13" text-anchor="end">9%</text>
+      <rect x="196" y="83" width="39" height="12" rx="6" fill="url(#neon)" filter="url(#soft)"/>
+      <text x="920" y="96" fill="#00F5FF" font-size="13" text-anchor="end">6%</text>
     </g>
     <g font-family="'Cascadia Code','JetBrains Mono',Consolas,'Courier New',monospace">
       <text x="28" y="130" fill="#E7F2FF" font-size="14" letter-spacing="1">C++</text>
       <rect x="196" y="117" width="700" height="12" rx="6" fill="#0E1626" stroke="#1C2B45"/>
-      <rect x="196" y="117" width="59" height="12" rx="6" fill="url(#neon)" filter="url(#soft)"/>
-      <text x="920" y="130" fill="#00F5FF" font-size="13" text-anchor="end">8%</text>
+      <rect x="196" y="117" width="38" height="12" rx="6" fill="url(#neon)" filter="url(#soft)"/>
+      <text x="920" y="130" fill="#00F5FF" font-size="13" text-anchor="end">5%</text>
     </g>
     <g font-family="'Cascadia Code','JetBrains Mono',Consolas,'Courier New',monospace">
       <text x="28" y="164" fill="#E7F2FF" font-size="14" letter-spacing="1">DART</text>
       <rect x="196" y="151" width="700" height="12" rx="6" fill="#0E1626" stroke="#1C2B45"/>
-      <rect x="196" y="151" width="50" height="12" rx="6" fill="url(#neon)" filter="url(#soft)"/>
-      <text x="920" y="164" fill="#00F5FF" font-size="13" text-anchor="end">7%</text>
+      <rect x="196" y="151" width="32" height="12" rx="6" fill="url(#neon)" filter="url(#soft)"/>
+      <text x="920" y="164" fill="#00F5FF" font-size="13" text-anchor="end">5%</text>
     </g>
     <g font-family="'Cascadia Code','JetBrains Mono',Consolas,'Courier New',monospace">
       <text x="28" y="198" fill="#E7F2FF" font-size="14" letter-spacing="1">CMAKE</text>
       <rect x="196" y="185" width="700" height="12" rx="6" fill="#0E1626" stroke="#1C2B45"/>
-      <rect x="196" y="185" width="46" height="12" rx="6" fill="url(#neon)" filter="url(#soft)"/>
-      <text x="920" y="198" fill="#00F5FF" font-size="13" text-anchor="end">7%</text>
+      <rect x="196" y="185" width="29" height="12" rx="6" fill="url(#neon)" filter="url(#soft)"/>
+      <text x="920" y="198" fill="#00F5FF" font-size="13" text-anchor="end">4%</text>
     </g>
 </svg>
